@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="../CSS/estilos.css">
+  <link rel="stylesheet" href="../CSS/Registro.css">
+
+</head>
+<body>
+
+  <header>
+    
+    <!-- Añadimos el nav -->
+
+    <nav>
+
+      <!-- LOGO y NOMBRE -->
+    
+      <img src="../Images/Logo One Web.png" class="logo" alt="Logo">
+
+      <h1>one web &copy;</h1>
+
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <!-- Listado de enlaces -->
+
+      <ul>
+        <li><a href="../index.html">inicio</a>
+          <i class="fa fa-angle-down" style="font-size:20px;color:white"></i>
+        <!-- Aqui iria submenu de Manga y Anime -->
+          <ul id="Desplegable">
+            <li><a href="Anime.html">Anime</a></li>
+            <li><a href="Manga.html">Manga</a></li>
+          </ul>
+        </li>
+        <li><a href="Noticias.html">noticias</a></li>
+        <li><a href="Merchandising.html">merchandising</a></li>
+        <li><a href="IniciarSesion.html">iniciar sesion</a></li>
+      </ul>
+
+    </nav>
+
+    <section class="Bienvenida">
+      <h2>
+        Registro
+      </h2>
+    </section>
+
+  </header>
+
+  <main>
+    <!-- Creamos los distintos apartados de la pagina principal -->
+    
+    <form>
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+      <br>
+      <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+      <br>
+      <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+      <br>
+      <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#@$!%&*?])(?!\s)[a-zA-Z\d#$@!%&*?]{8,16}" required>
+      <p id="contraseñamensaje">La contraseña debe contener al menos una letra minúscula<br>
+        Una letra mayúscula <br>
+        Un número <br>
+        Un carácter especial (#@$!%&*?) <br>
+        Tener una longitud de 8 a 16 caracteres. </p>
+      <br>
+      <input type="password" id="recontraseña" name="recontraseña" placeholder="Repetir contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#@$!%&*?])(?!\s)[a-zA-Z\d#$@!%&*?]{8,16}" required>
+      <br>
+      <input type="checkbox" id="condiciones" name="condiciones">
+      <label for="conditions">Acepto los términos y condiciones de uso</label>
+      <br>
+      <input onclick="validacionCampos(); return false;" type="submit" id="submit" value="Registrarse">
+      <p>¿Ya tienes una cuenta? <a href="IniciarSesion.html">Haz clic aquí</a> para iniciar sesión.</p>
+    </form>
+
+    
+
+  </main>
+
+  <footer>
+
+    <!-- Enlaces del footer -->
+
+    <section class="info">
+
+      <center>
+        <a href="#">¿quienes somos?</a>
+        <a href="#">sugerencias</a>
+      </center>
+
+    </section>
+
+    <!-- Section Para los enlaces a las redes -->
+
+    <section class="Redes">
+
+      <center>
+        <img src="../Images/Logo Facebook.png" alt="Facebook" width="65px">
+        <img src="../Images/Logo Instagram.png" alt="Instagram" width="70px">
+        <img src="../Images/Logo Twitter.png" alt="Twitter" width="70px">
+        <img src="../Images/Logo Youtube.png" alt="Youtube" width="65px">
+      </center>
+
+    </section>
+
+  </footer>
+
+  <!-- <script src="../JS/ValidacionFormularios.js"></script> -->
+  <script src="../JS/ValidacionFormularios.js"></script>
+
+</body>
+</html>

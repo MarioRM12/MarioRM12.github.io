@@ -1,0 +1,112 @@
+/*** Contenido ***/
+
+main
+{
+  height: 560px;
+}
+
+form
+{
+  width: 32%;
+  height: 300px;
+  position: relative;
+  left: 34%;
+  top: 125px;
+  background-color: rgb(66, 66, 66);
+  border-radius: 10px;
+  color: white;
+}
+
+form a
+{
+  color: white;
+
+}
+  
+input
+{
+  margin-top: 20px;
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#conditions
+{
+  padding: 0;
+  width: 20px;
+}
+  
+#submit
+{
+  width: 250px;
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+  
+#submit:hover
+{
+  background-color: #45a049;
+}
+  
+label
+{
+  font-size: large;
+}
+
+p
+{
+  margin-top: 45px;
+  font-size: large;
+  text-align: center;
+}
+
+main a:hover
+{
+  background-color:transparent;
+  text-decoration: underline;
+}
+
+@media (max-width: 952px)
+{
+
+  main
+  {
+    height: 600px;
+  }
+
+  form
+  {
+    top: 75px;
+    width: 90%;
+    left: 5%;
+  }
+
+
+
+
+}
+
+@media (max-width: 858px)
+{
+
+  main
+  {
+    height: 600px;
+  }
+
+  form
+  {
+    top: 75px;
+    width: 90%;
+    left: 5%;
+  }
+
+}
